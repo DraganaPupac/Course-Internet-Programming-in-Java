@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="ISO-8859-1">
+<title>Moj prvi zadatak</title>
+</head>
+<body>
+	<form method="post" action="">
+		Ime:<br/>
+		<input type="text" size="10" maxlength="100" name="name">
+		<br/>
+		Prezime: <br/>
+		<input type="text" size="10" maxlength="100" name="lastname"><br/>
+		<br/>
+		Pol: 
+		<input type="radio" name="pol" value="M">M
+		<input type="radio" name="pol" value="Z">Z
+		<br/>
+		<br/>
+		Datum rodjenja:<br/>
+  		<input type="date" name="bday">
+		</form>
+		<br/>
+		Drzava u kojoj zivite:<br/>
+			<select name="drzava">
+			<option>BiH</option>
+			<option>Srbija</option>
+			<option>Hrvatska</option>
+			<option>Slovenija</option>
+			<option>Svedska</option>
+		</select>
+		<br/>
+		<br/>
+		<form method="post" action="mailto:dragana.pupac@gmail.com">
+		email:<br/>
+		<input type="email" size="10" maxlength="50" name="email" required>
+		<br/>
+		Lozinka:<br/>
+		<input type="password" size="5" maxlength="10" name="password" required>
+		<br/>
+		Lozinka ponovo:<br/>
+		<input type="password" size="5" maxlength="10" name="password" required>
+		<br/>
+		<input type="submit" value="Pošalji podatke">
+		<br/>
+		<br/>
+		</form>
+		<br/>
+		Pronadjite fajl na disku:
+		<br/>
+		<input name="file" type="file" />
+		<br/>		
+</body>
+</html>
