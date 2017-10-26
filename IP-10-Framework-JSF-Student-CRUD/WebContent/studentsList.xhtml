@@ -25,6 +25,7 @@
                 <f:facet name="header">Id</f:facet>
                 <h:outputText value="#{table.rowIndex + 1}" />
             </h:column>
+            
             <h:column>
                 <f:facet name="header">Ime studenta</f:facet>
                 <h:outputText value="#{student.name}" />
@@ -45,6 +46,23 @@
                 <f:facet name="header">Adresa</f:facet>
                 <h:outputText value="#{student.address}" />
             </h:column>
+            
+             <h:column>
+                <f:facet name="header">Godina</f:facet>
+                <h:outputText value="#{student.yearstudy}" />
+            </h:column>
+         
+            <h:column>
+                <f:facet name="header">Budzet</f:facet>
+                <h:outputText value="#{student.budget}" />
+            </h:column>
+            
+            <h:column>
+                <f:facet name="header">Racun stanje</f:facet>
+                <h:outputText value="#{student.pay}" />
+            </h:column>
+            
+            
             <h:column>
                 <f:facet name="header">Ažuriranje</f:facet>
                 <h:commandButton action="#{studentBean.editStudentRecord(student.id)}" value="Ažuriraj" class="btn btn-primary" />

@@ -17,7 +17,10 @@ public class StudentBean {
 	private String password;  
 	private String gender;  
 	private String address;
-
+	private String yearstudy;
+	private String budget;
+	private String pay;
+	
 	public ArrayList<StudentBean>studentsListFromDB;
 
 	public int getId() {
@@ -67,6 +70,29 @@ public class StudentBean {
 	public void setAddress(String address) {
 		this.address = address;
 	}  
+	
+	public String getYearstudy() {
+		return yearstudy;
+	}
+	
+	public void setYearstudy(String yearstudy) {
+		this.yearstudy = yearstudy;
+	}
+	
+	public String getBudget() {
+		return budget;
+	}
+	public void setBudget(String budget) {
+		this.budget = budget;
+	}
+	
+	public String getPay() {
+		return pay;
+	}
+	
+	public void setPay(String pay) {
+		this.pay = pay;
+	}
 	
 	
 	@PostConstruct
